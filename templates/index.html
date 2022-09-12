@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block head %}
+
+<title>netflix_Recommendation</title>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="row">
+    <div class="col-md-4 col-lg-4 col-sm-12" style="margin-bottom:20px;">
+        <div class="card">
+            <div class="card-header">
+            Genre
+            </div>
+            <div class="card-body">
+    
+                <h5 class="card-title">genre_based_movie</h5>
+                <p class="card-text">return movies and shows based on your searched genre.</p>
+                <a class="btn btn-primary" href="/genre_based">recommend</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-md-4 col-lg-4 col-sm-12"  style="margin-bottom:20px;">
+            <div class="card">
+                <div class="card-header">
+                similar movies
+                </div>
+                <div class="card-body">
+        
+                    <h5 class="card-title">similar </h5>
+                    <p class="card-text">return similar type of movies and shows based on your searched movie.</p>
+                    <a class="btn btn-danger" href="/similar">recommend</a>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+</div>
+
+
+{%endblock%}
+
+
