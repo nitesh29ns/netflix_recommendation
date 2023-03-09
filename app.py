@@ -83,6 +83,10 @@ def similar():
         return render_template('similar.html', context=context)
     return render_template('similar.html', context=context)
 
+@app.route('/about')
+def us():
+    return render_template("about.html")
+
 
 
 if __name__ == "__main__":
