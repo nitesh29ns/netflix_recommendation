@@ -84,7 +84,7 @@ def similar():
     return render_template('similar.html', context=context)
 
 @app.route('/about')
-def us():
+def about():
     return render_template("about.html")
 
 
